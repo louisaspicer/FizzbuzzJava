@@ -31,7 +31,22 @@ public class FizzBuzzTest {
     public void knowsIfNotDivisibleByFive() {
         assertEquals(fizzbuzz.isDivisibleByFive(6), false);
     }
-    
+
+    @Test
+    public void knowsIfDivisibleByFifteen() {
+        assertEquals(fizzbuzz.isDivisibleByFifteen(15), true);
+    }
+
+    @Test
+    public void knowsIfNotDivisibleByFifteen() {
+        assertEquals(fizzbuzz.isDivisibleByFifteen(16), false);
+    }
+
+    @Test
+    public void returnsFizzIfDivisibleByThree() {
+        assertEquals(fizzbuzz.play(3), "Fizz");
+    }
+
 
 
 
