@@ -17,10 +17,10 @@ public class FizzBuzz {
      }
 
      public String play(int number) {
-         return "Fizz";
+         if (isDivisibleByFifteen(number)) return "FizzBuzz";
+         if (isDivisibleByThree(number)) return "Fizz";
+         if (isDivisibleByFive(number)) return "Buzz";
+         return String.valueOf(number);
      }
-
-
-
 
 }
